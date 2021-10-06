@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         TextView lonTextView = (TextView) findViewById(R.id.textView2);
         TextView altTextView = (TextView) findViewById(R.id.textView3);
         TextView accTextView = (TextView) findViewById(R.id.textView4);
+        TextView addressTextView = (TextView) findViewById(R.id.textView7);
         latTextView.setText("Latitude: " + location.getLatitude());
         lonTextView.setText("Longitude: " + location.getLongitude());
         altTextView.setText("Altitude: " + location.getAltitude());
@@ -116,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-            TextView addressTextView = (TextView) findViewById(R.id.textView7);
             addressTextView.setText(address);
 
         }
